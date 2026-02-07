@@ -70,6 +70,8 @@ Less common, but possible if:
 ls -l /dev/mapper/pve-vm--100--disk--0
 ```
 
+![[Pasted image 20260207114241.png]]
+
 If it’s missing → storage problem  
 If it exists → filesystem problem (most likely)
 
@@ -98,8 +100,11 @@ If it’s **ext4** (most common) the command below will fix the issue
 pct stop 100 fsck.ext4 -f /dev/mapper/pve-vm--100--disk--0
 ```
 
-Answer **`y`** to fixes.
+Answer ![[Pasted image 20260207114403.png]]
 
+type **`y`** to accept the fixes.
+
+![[Pasted image 20260207114446.png]]
 👉 This fixes the problem **a huge percentage of the time**.
 
 ---
