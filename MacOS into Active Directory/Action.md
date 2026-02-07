@@ -24,6 +24,7 @@ sudo scutil --set HostName ["NewNameOfComputerThatYouWantToNameIt"].localdomain
 ```
 
 
+![[Pasted image 20260207041058.png]]
 
 
 Youtube tutorials on how to add MacOs into an Active Directory
