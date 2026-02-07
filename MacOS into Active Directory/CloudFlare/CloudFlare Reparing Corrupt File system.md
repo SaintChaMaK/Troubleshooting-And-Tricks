@@ -66,7 +66,9 @@ Less common, but possible if:
 
 ###### Verify the disk exists
 
-`ls -l /dev/mapper/pve-vm--100--disk--0`
+```
+ls -l /dev/mapper/pve-vm--100--disk--0
+```
 
 If it’s missing → storage problem  
 If it exists → filesystem problem (most likely)
@@ -75,7 +77,9 @@ If it exists → filesystem problem (most likely)
 
 ###### Check what filesystem it _should_ be
 
-`blkid /dev/mapper/pve-vm--100--disk--0`
+```
+blkid /dev/mapper/pve-vm--100--disk--0
+```
 
 You’ll usually see something like:
 
@@ -85,11 +89,14 @@ If nothing shows up → superblock is damaged.
 
 ---
 
-###### Try repairing the filesystem (⚠️ important)
+##### Try repairing the filesystem (⚠️ important)
 
-### If it’s **ext4** (most common)
+###### **ext4**
+If it’s **ext4** (most common) the command below will fix the issue
 
-`pct stop 100 fsck.ext4 -f /dev/mapper/pve-vm--100--disk--0`
+```
+pct stop 100 fsck.ext4 -f /dev/mapper/pve-vm--100--disk--0
+```
 
 Answer **`y`** to fixes.
 
@@ -97,15 +104,27 @@ Answer **`y`** to fixes.
 
 ---
 
-### If it’s **xfs**
+***Note: This worked for me***
 
-`xfs_repair /dev/mapper/pve-vm--100--disk--0`
+
+### **xfs**
+
+```
+xfs_repair /dev/mapper/pve-vm--100--disk--0
+```
 
 ---
 
-## After repair
+###### After repair
 
-`pct start 100`
+```
+pct start 100
+```
 
 If it starts → you’re done 🎉  
 If not → grab the _first new error_, not the old one.
+
+
+***Note: If it does not work look for what the error say and look for other ways to solve them***
+
+
