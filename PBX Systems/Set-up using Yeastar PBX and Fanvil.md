@@ -1,2 +1,5 @@
 Yeastar PBX:
-	Model: 
+	Model: S20
+
+Fanvil:
+	Model: V62W
