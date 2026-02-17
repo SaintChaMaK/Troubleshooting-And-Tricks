@@ -3,6 +3,10 @@
 	Model: S20
 The **Yeastar Model S20** is a **VoIP PBX system** designed for small businesses, supporting up to 20 users and 10 concurrent calls.  It functions as a compact, modular IP-PBX appliance that integrates SIP, PSTN, ISDN BRI, and GSM/3G connectivity. Based on Asterisk 13, it offers features like voicemail, IVR, call routing, conferencing, and unified communications via the Linkus app—all without additional licensing fees.
 
+###### Credentials:
+IP Address: 172.16.0.254
+UserName: admin
+Password: Flashnet@2025
 
 
 
@@ -12,7 +16,10 @@ The **Yeastar Model S20** is a **VoIP PBX system** designed for small busine
 	Model: V62W
 The **Fanvil Model V62W** is an **IP phone** (or SIP desk phone), categorized as an **endpoint device** in a PBX system.  It supports 12 SIP lines, features a 2.8-inch color screen, HD audio, dual Gigabit Ethernet ports, Power over Ethernet (PoE), built-in Wi-Fi 6 (2.4GHz/5GHz), and Bluetooth 5.4 for wireless headsets or mobile integration.
 
-
+###### Credentials:
+IP Address: 172.16.0.193
+UserName: admin
+Password: admin
 
 
 
