@@ -1,0 +1,1 @@
+An HP Pro-Book Laptop is showing some disk errors every time is started and fails to boot from the Storage where the OS is installed on.
